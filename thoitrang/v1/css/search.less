@@ -1,0 +1,59 @@
+.box-search{
+    .relative;
+    margin-top: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    .form-control{
+        box-shadow: none;
+        .rgba(#fff,0.1);
+        border:0px;
+        .c(#fff);
+        transition:all 0.3s ease;
+        padding-left: 40px;
+        &:focus{
+            width: 100%;
+            transition:all 0.3s ease;
+        }
+    }
+    .form-input{
+        .relative;
+        .btn__search{
+            background: none;
+            .absolute;
+            .c(#fff);
+            top: 0px;
+            left: 0px;
+            width: 40px;
+            .center;
+        }
+    }
+    .bootstrap-select{
+        .btn{
+            box-shadow: none;
+            border:0px;
+            &:hover,&.active:focus,&:focus{
+                box-shadow: none;
+                background: none;
+            }
+        }
+        &.open{
+            >.btn{
+                &:hover,&:focus{
+                    background: none;
+                    box-shadow: none;
+                }
+                background: none;
+                box-shadow: none;
+            }
+        }
+        .form-control{
+            border:1px solid #ddd;
+            &:focus{
+                border:1px solid @success;
+            }
+        }
+        .dropdown-menu{
+            margin:0px;
+        }
+    }
+
+}

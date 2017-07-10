@@ -1,0 +1,102 @@
+.footer{
+    .f13;
+    .footer__box{
+        padding:20px 0px;
+    }
+    .icon{
+        .c(@main);
+        margin-right: 10px;
+    }
+    .footer__title{
+        .normal;
+        .upper;
+        margin-bottom: 10px;
+        .block;
+    }
+    .contact{
+        .f13;
+        .thin;
+        margin-bottom: 10px;
+    }
+    .url{
+        .block;
+        margin-bottom:10px;
+        .f13;
+        .thin;
+        &:hover{
+            .c(@main);
+        }
+    }
+    .list-social{
+        .center;
+        .item{
+            .inline;
+            padding:10px;
+        }
+        .btn{
+            .inline;
+            width: 30px;
+            height: 30px;
+            .bg(#eee);
+            .corner(50%);
+            padding:0px;
+            .center;
+            line-height: 30px;
+            .c(#777);
+            .relative;
+            .transition(0.4s);
+            .fa{
+                .f14;    
+            }
+            &:before{
+                top: 0px;
+                left: 0px;
+                content: "";
+                width: 100%;
+                .absolute;
+                height: 100%;
+                .corner(50%);
+                .transform(scale(1));
+                .transition(0.4s);
+                .opacity(0);
+                border:4px solid fade(@main, 30%);
+            }
+            &:hover{
+                .c(#fff);
+                background: @main;
+                .transition(0.4s);
+                &:before{
+                    .transform(scale(1.3));
+                    .transition(0.4s);
+                    .opacity(1);
+                }
+            }
+        }
+    }
+    .menu-footer{
+        background: #f6f6f6;
+        padding:10px 0px;
+        .center;
+        .url{
+            padding:2px 10px;
+            border-left: 2px dotted #ddd;
+            .inline;
+            .c(#666);
+            margin-bottom: 0px;
+            &:first-child{
+                border-left: 0px;
+            }
+        }
+    }
+    .copyright{
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding:10px 15px;
+        .center;
+        .f12;
+        opacity: 0.5;
+        .url{
+            .inline;
+            margin:0px 5px;
+        }
+    }
+}

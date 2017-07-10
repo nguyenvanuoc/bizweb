@@ -1,0 +1,71 @@
+.box-search{
+    .relative;
+    background: #fff;
+    margin-top: 10px;
+    .corner(3px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    .category{
+        .absolute;
+        width: 150px;
+        top: 0px;
+        left: 0px;
+        border-right: 1px solid @borc;
+        z-index: 2;
+    }
+    .form-control{
+        box-shadow: none;
+        background: #fff;
+        border:0px;
+        &:focus{
+            border:0px;
+
+        }
+        
+    }
+    .form-input{
+        .relative;
+        padding-left: 180px;
+        .xo;
+        padding-right: 40px;
+        .btn__search{
+            background: none;
+            .absolute;
+            top: 0px;
+            right: 0px;
+            width: 40px;
+            .center;
+        }
+    }
+    .bootstrap-select{
+        .btn{
+            box-shadow: none;
+            border:0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &:hover,&.active:focus,&:focus{
+                box-shadow: none;
+                background: none;
+            }
+        }
+        &.open{
+            >.btn{
+                &:hover,&:focus{
+                    background: none;
+                    box-shadow: none;
+                }
+                background: none;
+                box-shadow: none;
+            }
+        }
+        .form-control{
+            border:1px solid #ddd;
+            &:focus{
+                border:1px solid @success;
+            }
+        }
+        .dropdown-menu{
+            margin:0px;
+        }
+    }
+
+}
