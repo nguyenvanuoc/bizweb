@@ -1,0 +1,113 @@
+.hero-banner{
+    .relative;
+    min-height: 300px;
+    .xo;
+    .hero-bg{
+        background: @main;
+        .c(#fff);
+        .absolute;
+        top: 0px;
+        .full;
+        z-index: 1;
+
+    }
+    .hero-cover{
+        .absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 2;
+        .fullw;
+        img{
+            width: 100%;
+        }
+
+    }
+    
+    .hero-text{
+        .relative;
+        z-index: 3;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        img{
+            max-width: 100%;
+            max-height: 500px;
+        }
+    }
+    .desc-content{
+        max-width: 768px;
+        margin-top: 60px;
+        margin-bottom:40px;
+        .title{
+            .f24;
+            .thin;
+            .c(#fff);
+            margin-bottom: 10px;
+        }
+        .desc-text{
+            .f16;
+            margin-bottom:20px;
+            .thin;
+            line-height: 26px;
+            .c(white);
+            .opacity(0.6);
+        }
+
+    }
+    &.-second{
+        .desc-content{
+            .center;
+            margin:0px auto;
+            .title{
+                .f32;
+            }
+            .desc-text{
+            }
+        }
+        .hero-text{
+            padding-bottom: 0px;
+        }
+    }
+    .actions{
+        margin-top:20px;
+        .btn{
+            width: 200px;
+            padding:15px 20px;
+            margin:0px 5px;
+            .f15;
+            box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+
+            &.-trial{
+                background:@second;
+                .c(#fff);
+            }
+            &.-demo{
+                .rgba(#000,0.3);
+                .c(#fff);
+            }
+            &:hover{
+                .rgba(#000,0.4);
+                .c(#fff);
+            }
+        }
+    }
+    &.-pricing{
+        
+        .center;
+        .hero-text{
+            padding-top: 180px;
+            padding-bottom: 200px;
+
+        }
+        .desc-content{
+            margin:0px auto;
+            max-width: 100%;
+            margin-bottom:30px;
+            .title{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.slick-slide{
+    height: auto;        
+}

@@ -1,0 +1,128 @@
+.header{
+    .relative;
+    padding:10px;
+    top: 0px;
+    .fullw;
+    z-index: 100;
+    background: @main;
+    .logo{
+        img{
+            max-height:35px;
+        }
+        .-white{
+            .block;
+        }
+        .-color{
+            .hidden;
+        }
+    }
+    &.scrolled{
+        background: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        .logo{
+            .-white{
+                .hidden;
+            }
+            .-color{
+                .block;
+            }
+        }
+        .menus .item:hover{
+            .link-lv1{
+                .c(#fff);
+            }
+        }
+        .menus .item .link-lv1,.menu-right .btn{
+            .c(#555);
+        }
+        .menu-right .btn.-trial{
+            border:2px solid @main;
+            .c(@main);
+        }
+        .menu-right .btn:hover{
+            background: @main;
+            .c(#fff);
+        }
+    }
+    .nav{
+        .left;
+    }
+    .header-menu{
+        .right;
+    }
+}
+.menus{
+    .item{
+        .left;
+        .relative;
+        .link-lv1{
+            padding:10px 20px;
+            .inline;
+            .f15;
+            .c(#fff);
+            .relative;
+            border-radius: 3px 3px;
+        }
+        &:hover,&.active{
+            .link-lv1{
+                .rgba(#fff,0.1);  
+            }
+            
+            
+        }
+        &.sub{
+            .link-lv1{
+                &:after{
+                    .inline;
+                    content: "\f0d7";
+                    margin-left: 5px;
+                    font-family: FontAwesome;
+
+                }
+            }
+        }
+        &:hover,&.active{
+            .menu-sub{
+                .block;
+            }
+        }
+    }
+    .menu-sub{
+        width: 200px;
+        .absolute;
+        top: 100%;
+        .hidden;
+        left: 0px;
+        background: #5a9ff5;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+        .sub-link{
+            padding:15px 20px;
+            .block;
+            .c(#fff);
+            .thin;
+            &:hover{
+                .rgba(#fff,0.1);
+            }
+        }
+    }
+}
+.menu-right{
+    .tright;
+    .left;
+    .btn{
+        .inline;
+        .c(#fff);
+        border:2px solid transparent;
+        .f15;
+        padding:10px 20px;
+        margin-left: 5px;
+        &:hover{
+            .rgba(#fff,0.1);
+        }
+        &.-trial{
+            border:2px solid #fff;
+        }
+    }
+
+}
