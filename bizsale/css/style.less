@@ -6,7 +6,8 @@
 * @ Template: Iso Corporation Logistics
 */
 /* Reset Css  */
-
+@import url(config.less);
+@import url(vars.less);
 html,
 body,
 div,
@@ -88,7 +89,7 @@ a:hover {
   text-decoration: none;
 }
 .red {
-  color: @main;
+  color: @red;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -98,11 +99,9 @@ body {
 .container{
     max-width: 1200px;
 }
-@import url(config.less);
-@import url(vars.less);
+
 @import url(header.less);
 @import url(banner.less);
-
 @import url(account.less);
 @import url(feature.less);
 @import url(pricing.less);
@@ -395,6 +394,62 @@ body {
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
     background-color: rgb(250, 255, 189) !important;
+}
+
+.section.careers{
+    border-bottom: 1px solid #eee;
+    .form-box{
+        margin:0px auto;
+        max-width: 600px;
+        background: #fff;
+        padding: 20px;
+        .corner(5px);
+        box-shadow: 0px 0px 5px fade(#000,0.2);
+    }
+    .label{
+        color: #333;
+        display: block;
+        .f13;
+        .tleft;
+        padding:10px 0px;
+
+    }
+    .title{
+        .f32;
+        .center;
+        margin-bottom: 30px;
+    }
+    .form-control{
+        .corner(3px);
+        padding: 10px 10px;
+        height: 38px;
+        box-shadow: none;
+        border:1px solid #ccc;
+        &:focus{
+            border-color: @success;
+            background: #fff;
+        }
+        &.-file{
+            border-style: dotted;
+            padding: 20px;
+            height: auto;
+            &:hover{
+                background: #f6f6f6;
+            }
+        }
+        
+    }
+    .btn-submit{
+        display: block;
+        .fullw;
+        background: @success;
+        padding: 10px 20px;
+        .center;
+        color: #fff;
+        &:hover{
+            background: darken(@success,10);
+        }
+    }
 }
 @media (max-width:768px){
     .nav-toggle{
