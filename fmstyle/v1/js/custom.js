@@ -64,7 +64,7 @@
                     slidesToScroll: 3
                 }
             }, {
-                breakpoint: 420,
+                breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

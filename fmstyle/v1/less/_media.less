@@ -12,6 +12,9 @@
     .product{
         width: 25%;
     }
+    #QuickView .modal-dialog{
+        width: 100%;
+    }
 }
 
 @media (max-width:768px) {
@@ -154,10 +157,25 @@
     .product-list__title,.nav__slider{
         float: none;
     }
-
+    .product-item__actions{
+        visibility: visible;
+        .opacity(1);
+    }
+    .product-item__actions .btn.btn-detail,.product-item__actions .btn.btn-quickview{
+        display: none;
+    }
+    .product-item__actions .btn{
+        .fullw;
+        .block;
+        visibility:visible;
+        .opacity(1);
+    }
+    .product__price .product__price__old{
+        .hidden;
+    }
 }
 
-@media (max-width:420px) {
+@media (max-width:480px) {
     .product{
         width: 100%;
     }
