@@ -3,7 +3,20 @@
 /*  End .main-menu */
 .header-top{
     background: #f6f6f6;
-
+    border-bottom: 1px solid #eee;
+    .list{
+        .item{
+            .inline;
+        }
+        .url{
+            .block;
+            padding:5px 15px;
+            color: @main;
+            &:hover{
+                .underline;
+            }
+        }
+    }
 }
 .header-mid{
    padding: 20px 0px;
@@ -43,7 +56,7 @@
     }
 }
 .header-menu{
-    background: #000;
+    background: @main;
     padding: 10px 0px;
 }
 .social{
@@ -125,9 +138,10 @@
         }
         &.active{
             >.catalog__link{
-                color: #fff;
-                background: @main;
+                color: #000;
+                background: @second;
                 .relative;
+                .corner(3px);
                 .opacity(1);
             }
         }
@@ -198,7 +212,7 @@
 }
 
 
-.menu-icons__sub,.dropdown__shop__cart{
+.dropdown__shop__cart{
     .absolute;
     min-width: 200px;
     .tleft;
@@ -322,40 +336,48 @@
         .block;
     }
 }
-.header-top__location,.header-top__shopcart,.header-top__login{
+.header-top__shopcart,.header-top__login{
     .right;
     .pointer;
     .relative;
-    padding:8px 0px;
-    padding-left: 40px;
-    margin-left: 20px;
-    >.icon,>.icon .fa{
-        .lh(30px);
-        color: @text;
-
-    }
+    padding:5px 10px;
     .headline{
         .f12;
         color: @text;
         opacity: 0.7;
     }
-    >.title,>.txt{
-        color: @text;
-    }
-    >.icon{
-        width: 30px;
-        height: 30px;
-        .f14;
-        background: #000;
-        color: #fff;
-        .center;
-        .absolute;
-        top: 8px;
-        left: 0px;
-        .corner(50%);
+}
+.header-top__login{
+    .header-top__login--item{
+        .inline;
+
+        .header-top__login--link{
+            .inline;
+            padding: 5px 10px;
+            .relative;
+            &:before{
+                content: "";
+                height: 15px;
+                .absolute;
+                margin:auto;
+                left: 0px;
+                top: 0px;
+                bottom: 0px;
+                width: 2px;
+                border-left: 2px dotted #ddd;
+            }
+        }
+        &:first-child{
+            .header-top__login--link{
+                &:before{
+                    .hidden;
+                }
+            }
+        }
     }
 }
 .header-top__shopcart{
+    border: 1px solid @borc;
     &:hover{
         .dropdown__shop__cart{
             visibility: visible;
@@ -363,9 +385,23 @@
 
         }
     }
-    .product__price{
-        .c(@red);
-        margin:0px;
+    .icon{
+        background: #f5f6f7;
+        .center;
+        .inline;
+        .f16;
+    }
+    >.number{
+        color: #333;
+        .center;
+        .inline;
+        .vcenter;
+        line-height: 20px;
+        .num{
+            color: @main;
+            .bold;
+        }
+
     }
 }
 .header-top__login{
