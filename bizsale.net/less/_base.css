@@ -1,13 +1,3 @@
-/*
-* @ Core CSS File
-* @ Author: Uoc Nguyen
-* @ Fontend Developer
-* @ Website: http://lamnham.com
-* @ Template: BizSale.net
-*/
-
-/* Reset Css  */
-
 .absolute {
   position: absolute;
 }
@@ -933,8 +923,7 @@ body {
 }
 .footer {
   padding: 30px 0px;
-  background: #282f33;
-  color: white;
+  background: #f4f6fa;
 }
 .footer .title-footer {
   font-size: 18px;
@@ -946,18 +935,16 @@ body {
   display: block;
   margin-bottom: 7px;
   font-size: 13px;
-  color: white;
+  color: #888888;
 }
 .footer .link:hover {
-  color: #75bb0a;
+  color: #2a3990;
 }
 .footer .contact .add {
-  margin-bottom: 10px;
-  line-height: 18px;
+  margin-bottom: 5px;
 }
 .footer .contact .add .icon {
-  color: white;
-  margin-right: 7px;
+  color: #888888;
 }
 .footer .social {
   margin-top: 20px;
@@ -968,17 +955,17 @@ body {
   padding: 0px;
   line-height: 30px;
   text-align: center;
-  background-color: white;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.1);
   zoom: 1;
   background-color: transparent\9;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1affffff, endColorstr=#1affffff)";
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1affffff, endColorstr=#1affffff);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a000000, endColorstr=#1a000000)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1a000000, endColorstr=#1a000000);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
   position: relative;
-  color: white;
+  color: #777777;
   margin-right: 5px;
 }
 .footer .social .btn .-ap {
@@ -1031,8 +1018,7 @@ body {
   height: 50px;
 }
 .copyright {
-  background: #21272b;
-  color: white;
+  background: white;
   padding: 15px;
   text-align: center;
 }
@@ -1172,7 +1158,7 @@ body {
 }
 .section.-customers {
   background: url(../uploads/mosaic_2.jpg) repeat-x;
-  padding-bottom: 26%;
+  padding-bottom: 44.44444444%;
   position: relative;
 }
 .section.-customers .customer-text {
@@ -1181,6 +1167,7 @@ body {
   left: 0px;
   right: 0px;
   bottom: 0px;
+  font-size: 90px;
   font-weight: 300;
   text-align: center;
   background: rgba(249, 249, 249, 0.775);
@@ -1190,27 +1177,20 @@ body {
   background: -o-radial-gradient(#f9f9f9, rgba(249, 249, 249, 0.55));
   background: radial-gradient(#f9f9f9, rgba(249, 249, 249, 0.55));
 }
-.section.-customers .customer-text:before {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
 .section.-customers .customer-text .title {
   display: inline-block;
   vertical-align: middle;
-  font-size: 80px;
-  white-space: nowrap;
-  margin: 0px;
-  line-height: 0.6;
 }
 .section.-customers .customer-text .number {
   float: left;
+  display: block;
   font-size: 2em;
-  margin-right: 10px;
+}
+.section.-customers .customer-text .txt,
+.section.-customers .customer-text .sub {
+  display: block;
 }
 .section.-customers .customer-text .sub {
-  line-height: 2.2;
   font-size: 0.4em;
 }
 .section.sec-register {

@@ -100,6 +100,7 @@ body {
 @import url(_pricing.less);
 @import url(_product.less);
 @import url(_footer.less);
+@import url(_media.less);
 .title-main{
     font-size: 32px;
     .c(@main);
@@ -108,11 +109,10 @@ body {
     .center;
     margin-bottom: 40px;
     .headline{
-        .f16;
+        .f18;
         margin-top: 10px;
         .block;
-        .thin;
-        .c(#666);
+        .c(#444);
     }
 }
 .section{
@@ -121,12 +121,96 @@ body {
         border-bottom:2px solid #eee;
     }
 }
+.section.services{
+    background: #192438;
+    .title-main{
+        color: #fff;
+        .headline{
+            color: #fff;
+        }
+    }
+    .post_func{
+        padding: 0px;
+    }
+    .box_service_func{
+        .relative;
+        padding: 20px;
+        background: @main;
+        .fullw;
+        &.bg1{
+            background: #395592;
+
+        }
+        &.bg2{
+            background: #3c6ca7;
+
+        }
+        &.bg3{
+            background: #1787a6;
+
+        }
+        .title{
+            .block;
+            .center;
+            a{
+                .upper;
+                .thick;
+                color: #fff;
+                font-size: 16px;
+                line-height: 24px;
+                white-space: nowrap;
+                text-overfow:ellipsis;
+            }
+        }
+    }
+    .image{
+        .block;
+        .center;
+        margin-bottom: 10px;
+        img{
+            height: 150px;
+        }
+    }
+    .box-info{
+        .center;
+        color: #fff;
+        padding: 20px 40px;
+        line-height: 20px;
+        .btn{
+            padding: 7px 20px;
+            margin-top: 20px;
+            .corner(3px);
+            transform:scale(1.0);
+            transition:all 0.3s ease;
+            color: #fff;
+            &.bg1{
+                background: #395592;
+
+            }
+            &.bg2{
+                background: #3c6ca7;
+
+            }
+            &.bg3{
+                background: #1787a6;
+
+            }:hover{
+                transform:scale(1.1);
+                transition:all 0.3s ease;
+            }
+        }
+
+    }
+}
 .section.-overview{
+    .title-main{
+        .tleft;
+    }
     .desc-text{
+        padding: 40px;
         .desc{
             line-height: 22px;
             .f15;
-            .thin;
 
         }
         p{
@@ -153,44 +237,48 @@ body {
         }
     }
 }
-.section.choosen-us{
-    border-top: 1px solid @borc;
-    .center;
-    .title-main{
-        margin-bottom: 40px;
-    }
-    .icon{
-        img{
-            height:120px;
-        }
-        margin-bottom: 20px;
-    }
-    .title{
-        .f18;
-        .block;
-        .normal;
-        .c(#333);
-        margin-bottom: 20px;
-    }
-    .desc{
-        .f15;
+.section.-customers{
+    background: url(../uploads/mosaic_2.jpg) repeat-x;
+    padding-bottom: 26%;
+    .relative;
+    .customer-text{
+        .absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         .thin;
-        .c(#666);
-        line-height: 24px;
-    }
-}
-.section.sec-customer{
-    background: @bg;
-    .slider-partner{
+
         .center;
-        .item{
-            padding:15px;
-            .center;
+        background: rgba(249, 249, 249, 0.775);
+        background: -webkit-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
+        background: -moz-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
+        background: -ms-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
+        background: -o-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
+        background: radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
+        &:before{
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
         }
-        img{
-            max-width: 100%;
+        .title{
             .inline;
-            max-height: 40px;
+            .vcenter;
+            font-size: 80px;
+            white-space: nowrap;
+            margin: 0px;
+            line-height: 0.6;
+        }
+        .number{
+            .left;
+            font-size: 2em;
+            margin-right: 10px;
+
+        }
+        .sub{
+            line-height: 2.2;
+            font-size: 0.4em;
         }
 
     }

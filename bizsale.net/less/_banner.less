@@ -3,6 +3,7 @@
     min-height: 300px;
     .xo;
     .hero-bg{
+        
         background: @main;
         .c(#fff);
         .absolute;
@@ -26,8 +27,8 @@
     .hero-text{
         .relative;
         z-index: 3;
+        padding: 40px 0px;
         padding-top: 100px;
-        padding-bottom: 60px;
         img{
             max-width: 100%;
             max-height: 500px;
@@ -35,11 +36,11 @@
     }
     .desc-content{
         max-width: 768px;
-        margin-top: 60px;
-        margin-bottom:40px;
+       
+       padding: 40px 20px;
         .title{
             .f24;
-            .thin;
+            .thick;
             .c(#fff);
             margin-bottom: 10px;
         }
@@ -49,7 +50,7 @@
             .thin;
             line-height: 26px;
             .c(white);
-            .opacity(0.6);
+            .opacity(0.85);
         }
 
     }
@@ -74,11 +75,12 @@
             padding:15px 20px;
             margin:0px 5px;
             .f15;
+            .upper;
+            .thick;
             box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-
             &.-trial{
-                background: #fff;
-                .c(@main);
+                background:@success;
+                .c(#fff);
             }
             &.-demo{
                 .rgba(#000,0.3);
