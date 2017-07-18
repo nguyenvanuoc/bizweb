@@ -58,6 +58,12 @@
 .header-menu{
     background: @main;
     padding: 10px 0px;
+    &.scrolled{
+        .fixed;
+        .fullw;
+        top:0px;
+        z-index: 100;
+    }
 }
 .social{
     .inline;
@@ -279,8 +285,16 @@
 
 }
 .header__second{
-    background: @second;
+    background: @main;
     padding:10px 0px;
+    &.scrolled{
+        .fixed;
+        .fullw;
+        z-index: 100;
+        top: 0px;
+        margin-top: 0px;
+
+    }
     .logo{
         .image{
             img{
@@ -294,12 +308,12 @@
     .back__home{
 
         a{
-            color:#000;
+            color:#fff;
             padding:7px 10px;
             .inline;
             .corner(3px);
             &:hover{
-                .rgba(#000,0.2);
+                .rgba(#fff,0.2);
             }
         }
 
@@ -386,7 +400,7 @@
         }
     }
     .icon{
-        background: #f5f6f7;
+        background:none;
         .center;
         .inline;
         .f16;

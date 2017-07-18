@@ -1,12 +1,11 @@
 .footer{
     .f13;
-    background: #111;
-    .c(#9e9e9e);
+    border-top:1px solid #eee;
     .footer__box{
         padding:20px 0px;
     }
     .icon{
-        color: @second;
+        color: @main;
         margin-right: 10px;
     }
     .footer__title{
@@ -15,7 +14,7 @@
         margin-bottom: 10px;
         .block;
         .bold;
-        color: @second;
+        color: @main;
     }
     .contact{
         .f13;
@@ -25,9 +24,9 @@
         .block;
         margin-bottom:10px;
         .f13;
-        .c(#9e9e9e);
+        .c(#666);
         &:hover{
-            color: #fff;
+            color: @main;
         }
     }
     .list-social{
@@ -79,12 +78,12 @@
         .form-control{
             border:none;
             .corner(3px);
-            .rgba(#000,0.5);
+            border:1px solid #e5e5e5;
             box-shadow: none;
             padding: 10px 10px;
             margin-bottom: 20px;
             &:focus{
-                border-bottom-color: #fff;
+                border-bottom-color: @main;
             }
 
         }
@@ -95,10 +94,10 @@
         }
     }
     .bottom{
-        background: #000;
+        background: #f6f6f6;
         padding:10px 15px;
         .f12;
-        color: #9e9e9e;
+        color: #888;
         .url{
             .inline;
             margin:0px 5px;

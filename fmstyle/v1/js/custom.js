@@ -40,6 +40,16 @@
             return false;
         });
     });
+    $(window).scroll(function(){
+        var top=$(window).scrollTop();
+        if (top>120){
+            if (!$(".header__second,.header-menu").hasClass("scrolled")){
+                $(".header__second,.header-menu").addClass("scrolled");
+            }
+        }else{
+            $(".header__second,.header-menu").removeClass("scrolled");
+        }
+    });
 
     $('.slider__product').slick({
         dots: false,
