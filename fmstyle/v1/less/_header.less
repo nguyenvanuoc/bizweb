@@ -2,7 +2,7 @@
 
 /*  End .main-menu */
 .header-top{
-    background: #f6f6f6;
+    background:#f4f4f4;
     border-bottom: 1px solid #eee;
     .list{
         .item{
@@ -20,7 +20,6 @@
 }
 .header-mid{
    padding: 20px 0px;
-   border-bottom: 1px solid @borc;
     .logo{
         .block;
         padding:5px 0px;
@@ -42,21 +41,25 @@
     .hidden;
 }
 .hotline{
-    color: #777;
+    color: #333;
     padding: 5px 0px;
     .tright;
     .inline;
     .f13;
     .icon{
         margin-right: 5px;
+        color: @main;
     }
     .number{
-        color: #777;
+        color: #333;
         .thick;
+    }
+    b{
+        color: @main;
     }
 }
 .header-menu{
-    background: @main;
+    background: @second;
     padding: 10px 0px;
     &.scrolled{
         .fixed;
@@ -74,7 +77,8 @@
         line-height: 30px;
         padding: 0px;
         .center;
-        color: #777;
+        color: #666;
+        .opacity(0.8);
         &:hover{
             color: @main;
         }
@@ -127,12 +131,12 @@
             .center;
             .upper;
             padding:10px 20px;
-            color: #fff;
+            color: #000;
             text-decoration: none;
         }
         &:hover{
             >.catalog__link{
-                .c(@second);
+                .c(@main);
             }
             .catalog__sub{
                 visibility: visible;
@@ -144,8 +148,8 @@
         }
         &.active{
             >.catalog__link{
-                color: #000;
-                background: @second;
+                color: #fff;
+                background: @main;
                 .relative;
                 .corner(3px);
                 .opacity(1);

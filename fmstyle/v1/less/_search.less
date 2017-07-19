@@ -6,10 +6,10 @@
         background: none;
         color: @text;
         background: @bg;
-        border:1px solid @borc;
+        border:1px solid @main;
         transition:all 0.3s ease;
-        padding-left: 40px;
-        .corner(2px);
+        padding-right: 40px;
+        .corner(0px);
         height: 38px;
         &:focus{
             width: 100%;
@@ -23,11 +23,18 @@
         .btn__search{
             background: none;
             .absolute;
-            .c(#aaa);
+            .c(#fff);
+            background: @main;
             top: 0px;
-            left: 0px;
+            right: 0px;
             width: 40px;
+            border-radius: 0px;
             .center;
+            bottom: 0px;
+            margin:auto;
+            &:hover{
+                background: darken(@main,10);
+            }
         }
     }
     .bootstrap-select{

@@ -8,20 +8,17 @@
     margin:auto;
     .center;
     z-index: 3;
-    visibility: hidden;
-    transition:all 0.3s ease;
-    .opacity(0);
     .btn{
         .inline;
         padding:7px 10px;
         margin-bottom: 0px;
         .center;
-        .c(#333);
+        .c(@main);
         .upper;
         .corner(0px);
         .f12;
         background: #fff;
-        border:1px solid #333;
+        border:1px solid @main;
         transition:all 0.5s ease;
         .thick;
         .opacity(0);
@@ -31,6 +28,11 @@
             background: @main;
             border:1px solid @main;
             color: #fff;
+        }
+        &.btn-cart{
+            .opacity(1);
+            visibility: visible;
+
         }
         &.btn-quickview,&.btn-detail{
             width: 40px;
@@ -46,9 +48,20 @@
 }
 .product{
     .center;
-    padding: 0px 10px;
+    padding: 10px 10px;
     width: 20%;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    
+    .relative;
+    &:before{
+        top: 0px;
+        content: "";
+        bottom: 0px;
+        border-right: 1px solid @borc; 
+        .absolute;
+        width: 1px;
+        right: -1px;   
+    }
     .left;
     &:hover{
         .product__overlay{
@@ -111,18 +124,19 @@
         .corner(50%);
         .center;
         .lh(35px);
-        .c(#fff);
+        .c(#000);
         .absolute;
+        .thick;
         top: 0px;
         right: 0px;
-        background: @main;
+        background: @second;
         .f11;
         &:before{
             content: "";
             .absolute;
             bottom: -1px;
             left: -5px;
-            border-top: 9px solid @main;
+            border-top: 9px solid @second;
             border-right: 9px solid transparent;
             border-left: 9px solid transparent;
             .transform(rotate(45deg));
@@ -499,48 +513,59 @@
 }
 .product-list__head{
     .relative;
-    margin-bottom: 30px;
-    &:after,&:before{
-        content: "";
-        .absolute;
-        height: 1px;
-        top: 0px;
-        right: 0px;
-        left: 0px;
-        bottom: 0px;
-        margin:auto;
-        border-bottom:1px solid #333;
-    }
-    &:before{
-        border-bottom:1px dotted #333;
-        top: 5px;
-    }
-    .grid,.list{
-        .left;
-        width: 30px;
-        height: 30px;
-        .center;
+    margin-bottom: 0px;
+    border-top: 2px solid @main;
+    border-right: 1px solid @borc;
+    &.no1{
         border:1px solid @borc;
-        .c(#888);
-        margin-right: 10px;
-        line-height: 30px;
-        .pointer;
-        &.active{
-            border:1px solid @main;
-            .c(@main);
+        margin-bottom: 20px;
+    }
+    .nav-tabs{
+        border-bottom: 0px;
+        >li{
+            >a{
+                background: none;
+                border: none;
+                box-shadow: none;
+                .relative;
+                &:before{
+                    height: 20px;
+                    width: 1px;
+                    background:@borc;
+                    content: "";
+                    .absolute;
+                    bottom: 0px;
+                    margin: auto;
+                    top: 0px;
+                    right: 0px;
+
+                }
+            }
+            &:last-child{
+                >a{
+                    &:before{
+                        display: none;
+                    }
+                }
+            }
         }
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+        border:none;
+        color: @main;
+        .bold;
     }
 }
 .product-list__title{
-    .f24;
+    .f20;
     .upper;
     margin:0px;
     .relative;
-    padding-right: 15px;
+    padding: 10px;
     .thick;
     z-index: 10;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: @main;
     .inline;
     &:before{
         content: "";
@@ -595,15 +620,16 @@
 }
 .product-list__wrap{
     border-top: 0px;
+    border: 1px solid @borc;
     .row{
         maring:0px -10px;
     }
-    .product__item{
-        padding:15px;
-        height: auto;
-        width: 25%;
-        .left;
-
+    &.no-slider{
+        border-right: 0px;
+        border-bottom: 0px;
+        .product{
+            border-bottom: 1px solid @borc;
+        }
     }
 }
 
@@ -625,12 +651,13 @@
     .relative;
     z-index: 10;
     background: #fff;
-    padding-left: 15px;
+    margin-top: 7px;
+    margin-right: 10px;
     .nav{
         .inline;
         width: 25px;
         background: #fff;
-        margin-top: 15px;
+        
         height: 25px;
         border:1px solid @borc;
         .center;
