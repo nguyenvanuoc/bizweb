@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/css/slick.css">
     <link rel="stylesheet" type="text/css" href="vendor/css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,600,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;subset=vietnamese" rel="stylesheet">
 </head>
 </script>
 
@@ -73,14 +73,16 @@
                                 <a href="help.html" class="link-lv1">Hướng dẫn </a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="col-md-3 col-xs-12 col-sm-3">
-                    <div class="header-menu">
-                        <div class="menu-right">
+                        <div class="menu-right hidden-md hidden-lg">
                             <a data-toggle="modal" data-target="#register" class="btn -trial">Dùng thử</a>
                             <a data-toggle="modal" data-target="#login" class="btn -login">Đăng nhập</a>
                         </div>
+                    </nav>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-3">
+                    <div class="menu-right hidden-xs">
+                        <a data-toggle="modal" data-target="#register" class="btn -trial">Dùng thử</a>
+                        <a data-toggle="modal" data-target="#login" class="btn -login">Đăng nhập</a>
                     </div>
                 </div>
 
@@ -94,10 +96,13 @@
         <div class="hero-bg">
 
         </div>
+        <div class="hero-cover">
+            <div id="particles-js"></div>
+        </div>
         <div class="hero-text">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-5 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12 full-text">
                         <div class="desc-content">
                             <div class="title">
                                 Giải pháp kinh doanh và quản lý các chuỗi cửa hàng một cách hiệu quả
@@ -111,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7 col-sm-6 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="image-desc">
                             <img src="img/banner.svg" alt="">
                         </div>
@@ -254,7 +259,7 @@
                         <a href="#" class="link">API</a>
                         <a href="#" class="link">Tải BizSale apps</a>
                         <a href="#" class="link">Quản lý tài khoản</a>
-                        <a href="#" class="link">Giới thiệu bạn bèn</a>
+                        <a href="#" class="link">Giới thiệu bạn bè</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12">
@@ -276,11 +281,10 @@
     </div>
     <a class="scroll-top"><span class="fa fa-angle-up"></span></a>
     <script type="text/javascript" src="vendor/js/jquery.2.1.1.min.js"></script>
-    <script type="text/javascript" src="vendor/js/moment.js"></script>
     <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="vendor/js/bootstrap-select.min.js"></script>
-    <script type="text/javascript" src="vendor/js/jquery.nivo.slider.pack.js"></script>
     <script type="text/javascript" src="vendor/js/slick.min.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script src="js/custom.js"></script>
 
     <div id="login" class="modal__account modal fade" role="dialog">

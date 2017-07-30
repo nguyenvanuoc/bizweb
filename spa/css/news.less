@@ -1,0 +1,205 @@
+.news-item{
+    padding:40px 0px;
+    border-bottom: 1px dotted @borc;
+    .block-image{
+        .relative;
+        a{
+            .relative;
+            .block;
+            
+            .center;
+            .xo;
+            &:before{
+                content: "";
+                .transition(0.3s);
+            }
+            &:hover{
+                &:before{
+                    .transition(0.3s);
+                    .absolute;
+                    top:0px;
+                    right: 0px;
+                    left: 0px;
+                    bottom: 0px;
+                    .rgba(#000,0.3);
+                    z-index: 10;
+                }
+                img{
+                    transform:scale(1.1);
+                    .transition(0.3s);
+
+                }
+            }
+        }
+        img{
+            width: 100%;
+            .block;
+            transform:scale(1);
+            .transition(0.3s);
+        }
+    }
+    .news-title{
+        margin-bottom: 10px;
+        .block;        
+        a{
+           .f18;
+            .thick;
+            .block; 
+            color: #333;
+            &:hover{
+                color: #0cadbe;
+            }
+
+        }
+    }
+    .date-pst{
+        .block;
+        .absolute;
+        top:5px;
+        background: #0cadbe;
+        color: #fff;
+        padding:5px 10px;
+        z-index: 11;
+        left: 5px;
+        .bold;
+        .f13;
+        .icon{
+            margin-right: 5px;
+        }
+    }
+    .news-desc{
+        .f14;
+        line-height: 20px;
+    }
+    .readmore{
+        margin-top: 10px;
+        .block;
+        color: #454545;
+        .bold;
+        padding:10px 0px;
+        .inline;
+        &:hover{
+            .underline;
+        }
+    }
+    &:last-child{
+        border-bottom: 0px;
+    }
+}
+.sidebar{
+    .box{
+        padding:30px 0px;
+        border-bottom: 1px solid @borc;
+    }
+    .title-sidebar{
+        .f20;
+        margin-bottom:20px;
+    }
+    .box-cat{
+        .list{
+            .url{
+                .block;
+                margin-bottom: 10px;
+                .f14;
+                padding-left: 10px;
+                .relative;
+                color: #666;
+                &:before{
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    .corner(50%);
+                    background: @main;
+                    .absolute;
+                    top:10px;
+                    left: 0px;
+                }
+                &:hover{
+                    color: #333;
+                }
+                &.active{
+                    color: #111;
+
+                }
+
+            }
+        }
+    }
+
+    
+}
+.news-related{
+    .news-item{
+        padding:15px 0px;
+        .block-image{
+            width: 120px;
+            .left;
+            margin-right: 10px;
+        }
+        .news-title{
+            margin-bottom: 0px;
+            a{
+                .f14;
+
+            }
+        }
+        .date-pst{
+            .relative;
+            top: 0px;
+            .normal;
+
+            z-index: 0;
+            left: 0px;
+            background: none;
+            color: @main;
+
+        }
+    }    
+}
+.box-register{
+    margin-top: 20px;
+    border:1px solid @borc;
+    .head{
+        .f18;
+        .thick;
+        color: #333;
+        background: #fafafa;
+        border-bottom: 1px solid @borc;
+    }
+    .form-control{
+        height: 38px;
+        box-shadow: none;
+        border:1px solid @borc;
+        .corner(2px);
+        &:focus{
+            border-color: @main;
+        }
+    }
+    .panel-body{
+        padding: 30px;
+
+    }
+    .btn-submit{
+        padding:10px 30px;
+        background: #337ab7;
+        color: #fff;
+        .corner(2px);
+        .thick;
+        &:hover{
+            background: darken(#337ab7, 10%);
+        }
+    }
+}
+.news-bottom{
+    background: #fafafa;
+    padding:20px;
+    margin-top: 40px;
+    .title-bottom{
+        
+        padding-bottom: 10px;
+        .f20;
+        color: #444;
+        margin-bottom: 20px;
+        border-bottom: 2px dotted @borc;
+    }
+}

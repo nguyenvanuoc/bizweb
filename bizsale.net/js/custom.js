@@ -86,11 +86,11 @@ var LP=new function __LP(){
     this.expandMenu=function(a,b){
         if(a=="open"){
             $(b).toggleClass("active");
-            $(".header-menu").toggleClass("show");
+            $(".header .nav").toggleClass("show");
             $(".common-overlay").toggleClass("show");
         }else{
             $(b).toggleClass("active");
-            $(".header-menu").toggleClass("show");
+            $(".header .nav").toggleClass("show");
             $(".common-overlay").toggleClass("show");
         }
     }
