@@ -2786,7 +2786,7 @@ textarea {
 .box-contact .description {
   font-size: 16px;
   margin-bottom: 15px;
-  color: white;
+  color: #444444;
 }
 .box-contact .form-control {
   -webkit-border-radius: 3px;
@@ -2794,9 +2794,11 @@ textarea {
   border-radius: 3px;
   box-shadow: none;
   border: none;
+  border: 1px solid #dddddd;
 }
 .box-contact .form-control:focus {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-color: #7fc142;
 }
 .box-contact .btn-submit {
   padding: 15px 20px;

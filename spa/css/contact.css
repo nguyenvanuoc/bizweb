@@ -1,0 +1,74 @@
+.box-contact {
+  background: url(../uploads/contact.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  padding: 60px 20px;
+  margin: 30px 0px;
+  padding-top: 80px;
+  width: 100%;
+}
+.box-contact .wrap {
+  max-width: 300px;
+  float: right;
+}
+.box-contact .description {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #444444;
+}
+.box-contact .form-control {
+  border-radius: 3px;
+  box-shadow: none;
+  border: none;
+  border: 1px solid #dddddd;
+}
+.box-contact .form-control:focus {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  border-color: #7fc142;
+}
+.box-contact .btn-submit {
+  padding: 15px 20px;
+  border-radius: 3px;
+  background: #7fc142;
+  color: white;
+  border: none;
+  width: 100%;
+}
+.box-contact .btn-submit:hover {
+  background: #669d33;
+}
+.section.-contact {
+  text-align: left;
+}
+.section.-contact .contact-info .title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  display: block;
+}
+.section.-contact .contact-info .add {
+  margin-bottom: 7px;
+}
+.section.-contact .contact-info .add .icon {
+  margin-right: 7px;
+}
+.section.-contact .box-contact {
+  background: none;
+  background: white;
+  padding: 40px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.section.-contact .box-contact .description {
+  color: #9b9587;
+}
+.section.-contact .box-contact .wrap {
+  width: 100%;
+  max-width: 100%;
+}
+.section.-contact .box-contact .form-control {
+  border: 1px solid #e5e2de;
+}
+.section.-contact .box-contact .form-control:focus {
+  box-shadow: none;
+  border: 1px solid #7fc142;
+}
