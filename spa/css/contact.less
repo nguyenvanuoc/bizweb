@@ -85,3 +85,120 @@
         }
     }
 }
+
+.about-img{
+    padding: 20px;
+    img{
+        width: 100%;
+        display: block;
+    }
+
+}
+.banner{
+    img{
+        display: block;
+    }
+}
+.about-text{
+    font-size: 24px;
+    padding: 20px 20px;
+    text-align: justify;
+    p{
+        margin-bottom: 30px;
+    }
+    .quote{
+        font-size: 32px;
+        color: #9b9587;
+        margin:20px 0px;
+        font-weight: bold;
+    }
+}
+
+.about-section1{
+    padding: 0px;
+    position: relative;
+    .about-img{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 50%;
+        bottom: 0px;
+        background-image: url(../uploads/abouts/section1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+
+    }
+    .about-text{
+        font-size: 16px;
+        padding: 40px 40px;
+        max-width: 600px;
+        margin: 0px auto;
+        p{
+            margin-bottom: 20px;
+        }
+        .quote{
+            font-size: 32px;
+        }
+    }
+    .stamp{
+        margin-top: 20px;
+        img{
+            max-width: 100%;
+            height: 150px;    
+        }
+        
+    }
+}
+.about-section2{
+    .about-text{
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+    .about-img{
+        padding: 0px 20px;
+    }
+}
+.about-section3{
+    position: relative;
+    padding: 0px;
+    .bg{
+        position: absolute;
+        top:100px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background: #e8ddc9;
+    }
+    .about-text{
+        padding: 20px 20px;
+        font-size: 16px;
+        margin-top: 110px;
+    }
+    .about-img{
+        padding: 0px 20px;
+    }
+}
+.about-section4{
+    .about-text{
+        font-size: 16px;
+        padding: 40px 30px;
+
+    }
+    .about-img{
+        padding:0px  20px;
+    }
+}
+
+@media (max-width:768px) {
+    .about-section3 .about-text{
+        margin-top: 0px;
+
+    }
+    .about-section1 .about-img{
+        display: none;
+    }
+    .about-text{
+        text-align: left;
+    }
+}
