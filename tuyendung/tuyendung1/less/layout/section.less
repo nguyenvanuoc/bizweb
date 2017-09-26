@@ -1,0 +1,158 @@
+.section{
+	padding: 60px 0px;
+
+}
+.section-head{
+	max-width: 768px;
+	margin: 0px auto;
+	.center;
+	margin-bottom: 30px;
+	.title{
+		.f32;
+		margin-bottom: 20px;
+		color: @title;
+		.thin;
+		font-family:"Roboto Slab";
+	}
+	.desc{
+		.f18;
+		color: @text;
+		.thin;
+	}
+
+}
+.section.-enviroment{
+	.wrap{
+		.relative;
+		padding-left: 50px;
+		margin-bottom:30px;
+		.justify;
+		.icon{
+			.absolute;
+			top:0px;
+			left:0px;
+			font-size:30px;
+			color:@main;
+
+		}
+		.title{
+			margin-bottom:10px;
+			.f15;
+		}
+		.description{
+			.opacity(0.9);
+		}
+	}
+}
+
+.register-box{
+	.center;
+	margin-top: 30px;	
+	.btn-register{
+		.inline;
+		padding: 10px 40px;
+		.corner(3px);
+		color: #fff;
+		background:@main;
+		transition:all 0.3s ease;
+		.upper;
+		.thick;
+		.f15;
+		&:hover{
+			transition:all 0.3s ease;
+			background:darken(@main,10);
+		}
+	}
+}
+
+.section.staff-think{
+	.section-head{
+		.tleft;
+	}
+	.image{
+		img{
+			max-width:100%;
+		}
+	}
+	.slider-employees{
+		padding:30px;
+		
+		.quote{
+			margin-bottom:20px;
+			.italic;
+			.f15;
+			.relative;
+			.justify;
+			padding-left:40px;
+			&:before{
+				font-family:ap;
+				content:"\e8e7";
+				font-size:24px;
+				.absolute;
+				top:0px;
+				left:0px;
+				.opacity(0.3);
+			}
+		}
+		.info{
+			.relative;
+			padding-left:70px;
+			.name{
+				.thick;
+				.f15;
+				.block;
+				margin-bottom:5px;
+
+			}
+			.pos{
+				.thin;
+			}
+		}
+		.avatar{
+			.absolute;
+			border-radius: 50%;
+			.xo;
+			background-size:cover;
+			background-position:center;
+			background-repeat:no-repeat;
+			width:45px;
+			height:45px;
+			top:0px;
+			left:0px;
+		}
+	}
+	.slick-dots{
+		.center;
+		margin-top:30px;
+		>li{
+			.inline;
+			margin:0px 2px;
+			>button{
+				width:16px;
+				height:16px;
+				font-size:0px;
+				background:none;
+				.corner(50%);
+				border:1px solid @borc;
+				.relative;
+				.inline;
+				padding:0px;
+			}
+			&.slick-active{
+				>button{
+					&:before{
+						content:"";
+						.absolute;
+						top:2px;
+						left:2px;
+						bottom:2px;
+						right:2px;
+						background:@borc;
+						.corner(50%);
+
+					}
+				}
+			}
+		}
+	}
+}
