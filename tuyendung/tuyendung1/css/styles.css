@@ -701,8 +701,9 @@ body {
   color: #4a90e2 !important;
 }
 .footer .footer-block-link {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer .bottom {
   margin-top: 40px;
