@@ -28,9 +28,9 @@ var LP=new function __LP(){
             $(".header .box-menus").toggleClass("show");
             $(".common-overlay").toggleClass("show");
         }else{
-            $(b).toggleClass("active");
+            $(b).toggleClass("show");
+            $(".nav-toggle").toggleClass("active");
             $(".header .box-menus").toggleClass("show");
-            $(".common-overlay").toggleClass("show");
         }
     }
 };

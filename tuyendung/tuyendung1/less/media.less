@@ -51,7 +51,10 @@
         right: 15px;
         .corner(5px);
         &:hover{
-            .rgba(#000,0.3);
+            background:@main;
+            .bar{
+                background:#fff;
+            }
         }
         .bar{
             height: 2px;
@@ -63,7 +66,7 @@
             right: 0px;
             margin:auto;
             .corner(20px);
-            background: #fff;
+            background: @main;
             .transition(0.2s);
             &.first{
                 bottom: 12px;
@@ -164,30 +167,28 @@
     	}
 
     }
-    .hero-banner .hero-img{
-    	padding-right: 0px;
-    	img{
-    		.fullw;
-    	}
+    .hero-banner .hero-cover{
+        .hidden;
     }
-    .hero-banner .hero-img .device-phone{
-    	.hidden;
-
-    }
-    .section.-keymess .section-image{
-    	.fullw;
-    }
-    .footer .box.-register .actions .btn{
-    	margin-bottom: 10px;
+    .hero-banner .hero-content{
+        padding:40px 0px;
     }
     .footer .col-sm-3{
-    	.fullw;
-    	margin-bottom: 20px;
+        .fullw;
+        margin-bottom:20px;
     }
 }
 
 @media (max-width:480px) {
-    
+    .section.-jobs .jobs .job{
+        padding-right: 10px;
+    }
+    .section.-jobs .btn-apply{
+        .relative;
+        top:0px;
+        right:0px;
+        margin-top:10px;
+    }
 }
 
 

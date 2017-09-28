@@ -128,8 +128,8 @@
 			.inline;
 			margin:0px 2px;
 			>button{
-				width:16px;
-				height:16px;
+				width:12px;
+				height:12px;
 				font-size:0px;
 				background:none;
 				.corner(50%);
@@ -152,6 +152,162 @@
 
 					}
 				}
+			}
+		}
+	}
+}
+
+.job-cat, .job-cat a{
+	.f24;
+	.thin;
+	color:@main;
+	.block;
+	margin-bottom:10px;	
+}
+.box-cat{
+	margin-bottom:30px;
+}
+.jobs{
+	.job{
+		padding:10px 10px;
+		border:1px dotted @borc;
+		.relative;
+		margin-bottom:5px;
+		padding-right: 60px;
+		&:hover{
+			background:#f8f8f9;
+		}
+	}
+}
+.job-title{
+	>a{
+		font-size:15px;
+		.block;
+		margin-bottom:10px;
+	}
+}
+.job-desc{
+	.f13;
+	color:#666;
+	.icon{
+		margin-right:10px;
+		color:@main;
+	}
+	.exp{
+		.inline;
+		&:before{
+			content: "";
+			.inline;
+			margin:0px 5px;
+			width:2px;
+			height:2px;
+			background:#aaa;
+			.corner(50%);
+			.vcenter;
+
+		}
+	}
+}
+.btn-apply{
+	padding:5px 20px;
+	.corner(2px);
+	.absolute;
+	top:10px;
+	right:10px;
+	background:@main;
+	color:#fff;
+	.inline;
+	&:hover{
+		background:darken(@main,5);
+		color:#fff;
+	}
+
+}
+
+.breadcrumb{
+	background:none;
+	padding:0px;
+}
+
+.article{
+	line-height:20px;
+	.f15;
+	.justify;
+	h1,h2,h3,h4,h5,p,div,li{
+		margin-bottom:15px;
+		line-height:1.4;
+	}
+	h1{
+		.f32;
+		font-family:"Roboto Slab";
+
+	}
+	h2{
+		.f20;
+		.thick;
+	}
+	h3{
+		.f18;
+	}
+	h4{
+		.f16;
+	}
+	h5{
+		.f15;
+	}
+
+}
+
+.section.-article{
+	.box-related{
+		margin-top:30px;
+	}
+	.btn-apply{
+		.relative;
+		top:0px;
+		right:0px;
+		padding:10px 20px;
+		.center;
+		.fullw;
+		.f16;
+		.upper;
+		.bold;
+		margin-bottom:20px;
+	}
+	.box-sidebar{
+		
+		.job-info{
+			padding:10px;
+			.corner(3px);
+			background:#f6f7f8;
+			.info{
+				margin-bottom:10px;
+				.icon{
+					color:@main;
+					margin-right:5px;
+				}
+			}
+		}
+	}
+	.share-box{
+		margin-top:20px;
+		.title{
+			.f20;
+			.thin;
+			margin-bottom:10px;
+
+		}
+		.btn{
+			padding:0px;
+			width:30px;
+			height:30px;
+			border:1px solid @borc;
+			.corner(50%);
+			line-height:28px;
+			color:#999;
+			&:hover{
+				background:#f6f7f8;
+				color:#444;
 			}
 		}
 	}
