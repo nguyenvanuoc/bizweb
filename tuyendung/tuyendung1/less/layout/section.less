@@ -1,0 +1,314 @@
+.section{
+	padding: 60px 0px;
+
+}
+.section-head{
+	max-width: 768px;
+	margin: 0px auto;
+	.center;
+	margin-bottom: 30px;
+	.title{
+		.f32;
+		margin-bottom: 20px;
+		color: @title;
+		.thin;
+		font-family:"Roboto Slab";
+	}
+	.desc{
+		.f18;
+		color: @text;
+		.thin;
+	}
+
+}
+.section.-enviroment{
+	.wrap{
+		.relative;
+		padding-left: 50px;
+		margin-bottom:30px;
+		.justify;
+		.icon{
+			.absolute;
+			top:0px;
+			left:0px;
+			font-size:30px;
+			color:@main;
+
+		}
+		.title{
+			margin-bottom:10px;
+			.f15;
+		}
+		.description{
+			.opacity(0.9);
+		}
+	}
+}
+
+.register-box{
+	.center;
+	margin-top: 30px;	
+	.btn-register{
+		.inline;
+		padding: 10px 40px;
+		.corner(3px);
+		color: #fff;
+		background:@main;
+		transition:all 0.3s ease;
+		.upper;
+		.thick;
+		.f15;
+		&:hover{
+			transition:all 0.3s ease;
+			background:darken(@main,10);
+		}
+	}
+}
+
+.section.staff-think{
+	.section-head{
+		.tleft;
+	}
+	.image{
+		img{
+			max-width:100%;
+		}
+	}
+	.slider-employees{
+		padding:30px;
+		
+		.quote{
+			margin-bottom:20px;
+			.italic;
+			.f15;
+			.relative;
+			.justify;
+			padding-left:40px;
+			&:before{
+				font-family:ap;
+				content:"\e8e7";
+				font-size:24px;
+				.absolute;
+				top:0px;
+				left:0px;
+				.opacity(0.3);
+			}
+		}
+		.info{
+			.relative;
+			padding-left:70px;
+			.name{
+				.thick;
+				.f15;
+				.block;
+				margin-bottom:5px;
+
+			}
+			.pos{
+				.thin;
+			}
+		}
+		.avatar{
+			.absolute;
+			border-radius: 50%;
+			.xo;
+			background-size:cover;
+			background-position:center;
+			background-repeat:no-repeat;
+			width:45px;
+			height:45px;
+			top:0px;
+			left:0px;
+		}
+	}
+	.slick-dots{
+		.center;
+		margin-top:30px;
+		>li{
+			.inline;
+			margin:0px 2px;
+			>button{
+				width:12px;
+				height:12px;
+				font-size:0px;
+				background:none;
+				.corner(50%);
+				border:1px solid @borc;
+				.relative;
+				.inline;
+				padding:0px;
+			}
+			&.slick-active{
+				>button{
+					&:before{
+						content:"";
+						.absolute;
+						top:2px;
+						left:2px;
+						bottom:2px;
+						right:2px;
+						background:@borc;
+						.corner(50%);
+
+					}
+				}
+			}
+		}
+	}
+}
+
+.job-cat, .job-cat a{
+	.f24;
+	.thin;
+	color:@main;
+	.block;
+	margin-bottom:10px;	
+}
+.box-cat{
+	margin-bottom:30px;
+}
+.jobs{
+	.job{
+		padding:10px 10px;
+		border:1px dotted @borc;
+		.relative;
+		margin-bottom:5px;
+		padding-right: 60px;
+		&:hover{
+			background:#f8f8f9;
+		}
+	}
+}
+.job-title{
+	>a{
+		font-size:15px;
+		.block;
+		margin-bottom:10px;
+	}
+}
+.job-desc{
+	.f13;
+	color:#666;
+	.icon{
+		margin-right:10px;
+		color:@main;
+	}
+	.exp{
+		.inline;
+		&:before{
+			content: "";
+			.inline;
+			margin:0px 5px;
+			width:2px;
+			height:2px;
+			background:#aaa;
+			.corner(50%);
+			.vcenter;
+
+		}
+	}
+}
+.btn-apply{
+	padding:5px 20px;
+	.corner(2px);
+	.absolute;
+	top:10px;
+	right:10px;
+	background:@main;
+	color:#fff;
+	.inline;
+	&:hover{
+		background:darken(@main,5);
+		color:#fff;
+	}
+
+}
+
+.breadcrumb{
+	background:none;
+	padding:0px;
+}
+
+.article{
+	line-height:20px;
+	.f15;
+	.justify;
+	h1,h2,h3,h4,h5,p,div,li{
+		margin-bottom:15px;
+		line-height:1.4;
+	}
+	h1{
+		.f32;
+		font-family:"Roboto Slab";
+
+	}
+	h2{
+		.f20;
+		.thick;
+	}
+	h3{
+		.f18;
+	}
+	h4{
+		.f16;
+	}
+	h5{
+		.f15;
+	}
+
+}
+
+.section.-article{
+	.box-related{
+		margin-top:30px;
+	}
+	.btn-apply{
+		.relative;
+		top:0px;
+		right:0px;
+		padding:10px 20px;
+		.center;
+		.fullw;
+		.f16;
+		.upper;
+		.bold;
+		margin-bottom:20px;
+	}
+	.box-sidebar{
+		
+		.job-info{
+			padding:10px;
+			.corner(3px);
+			background:#f6f7f8;
+			.info{
+				margin-bottom:10px;
+				.icon{
+					color:@main;
+					margin-right:5px;
+				}
+			}
+		}
+	}
+	.share-box{
+		margin-top:20px;
+		.title{
+			.f20;
+			.thin;
+			margin-bottom:10px;
+
+		}
+		.btn{
+			padding:0px;
+			width:30px;
+			height:30px;
+			border:1px solid @borc;
+			.corner(50%);
+			line-height:28px;
+			color:#999;
+			&:hover{
+				background:#f6f7f8;
+				color:#444;
+			}
+		}
+	}
+}

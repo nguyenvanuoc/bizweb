@@ -85,7 +85,7 @@ a:hover {
   color: @red;
 }
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 13px;
   color: #444;
 }
@@ -122,7 +122,7 @@ body {
     }
 }
 .section.services{
-    background: #192438;
+    background: #002c63;
     .title-main{
         color: #fff;
         .headline{
@@ -135,20 +135,7 @@ body {
     .box_service_func{
         .relative;
         padding: 20px;
-        background: @main;
         .fullw;
-        &.bg1{
-            background: #395592;
-
-        }
-        &.bg2{
-            background: #3c6ca7;
-
-        }
-        &.bg3{
-            background: #1787a6;
-
-        }
         .title{
             .block;
             .center;
@@ -166,7 +153,6 @@ body {
     .image{
         .block;
         .center;
-        margin-bottom: 10px;
         img{
             height: 150px;
         }
@@ -174,7 +160,7 @@ body {
     .box-info{
         .center;
         color: #fff;
-        padding: 20px 40px;
+        padding: 0px 40px;
         line-height: 20px;
         .btn{
             padding: 7px 20px;
@@ -252,6 +238,7 @@ body {
     background: url(../uploads/mosaic_2.jpg) repeat-x;
     padding-bottom: 26%;
     .relative;
+
     .customer-text{
         .absolute;
         top: 0px;
@@ -259,14 +246,9 @@ body {
         right: 0px;
         bottom: 0px;
         .thin;
-
+        color:#fff;
         .center;
-        background: rgba(249, 249, 249, 0.775);
-        background: -webkit-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
-        background: -moz-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
-        background: -ms-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
-        background: -o-radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
-        background: radial-gradient(#F9F9F9, rgba(249, 249, 249, 0.55));
+        background:rgba(0, 44, 99, 0.93);
         &:before{
             content: "";
             display: inline-block;
@@ -276,10 +258,10 @@ body {
         .title{
             .inline;
             .vcenter;
-            font-size: 80px;
-            white-space: nowrap;
+            font-size: 40px;
             margin: 0px;
             line-height: 0.6;
+
         }
         .number{
             .left;
@@ -290,6 +272,8 @@ body {
         .sub{
             line-height: 2.2;
             font-size: 0.4em;
+            margin-top:10px;
+            display:block;
         }
 
     }
