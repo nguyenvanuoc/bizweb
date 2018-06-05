@@ -1,0 +1,225 @@
+.our-service{
+    .relative;
+    .xo;
+    .cover{
+        .absolute;
+        top: 0px;
+        left: 0px;
+        .opacity(0.3);
+        .center;
+        img{
+            max-width: 100%;
+
+        }
+    }
+    .item{
+        background: #fff;
+        border:1px solid @borc;
+        .corner(5px);
+        margin-bottom: 30px;
+        .relative;
+        min-height: 150px;
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.05);
+        transition:all 0.3s ease;
+        .xo;
+        .content{
+            padding:15px;
+            padding-left: 70px;
+            .relative;
+
+        }
+        &:hover{
+            transition:all 0.3s ease;
+            transform:scale(1.1);
+            box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.2);
+        }
+        .icon{
+            .absolute;
+            left: 20px;
+            top: 30px;
+            img{
+                width: 35px;
+            }
+        }
+        .title{
+            .f16;
+            .thick;
+            margin-bottom: 10px;
+            .block;
+            padding:10px 15px;
+            background:@main;
+            color:#fff;
+        }
+        .desc{
+            .c(#9a9a9a);
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;  
+            height: 55px; 
+            text-overlay:ellipsis;
+            .xo;
+        }
+        .cta{
+            .block;
+            margin-top: 20px;
+            .tleft;
+        }
+        .btn-more{
+            .c(@main);
+            .inline;
+            border-bottom: 1px dotted transparent;
+            &:hover{
+                border-bottom: 1px dotted @main;
+            }
+        }
+    }
+    .bg-image{
+        margin-top: 40px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.customer-say{
+    .slider-customer{
+        .content{
+            color: #555;
+            line-height: 22px;
+            &:before,&:after{
+                content: "";
+                font-family: ap;
+                .inline;
+                color: #ccc;
+                .f18;
+            }
+            &:before{
+                content: "\e8e7";
+                margin-right: 10px;
+            }
+            &:after{
+                content: "\e8e8";
+                margin-left: 10px;
+            }
+        }
+        // .logo{
+        //     .inline;
+        //     border:2px solid @borc;
+        //     padding:10px;
+        //     margin-right:5px;
+        //     img{
+        //         max-height:100px;    
+        //     }
+        // }
+        .info{
+            .block;
+            margin-top: 20px;
+            .logo{
+                width: 120px;
+                .inline;
+                margin-right: 20px;
+                .vcenter;
+                img{
+                    max-width: 100%;
+                    .inline;
+                }
+            }  
+            .txt{
+                .inline;
+                .vcenter;
+            }
+            .name{
+                .block;
+                font-weight: 600;
+
+            } 
+            .pos{
+                .block;
+                color: #9a9a9a;
+            }
+        }
+    }
+
+}
+.sec-news{
+    .slider-news{
+        .item{
+            margin-bottom: 20px;
+            padding:0px 15px;
+        }    
+    }
+    
+    .image{
+        margin-bottom: 10px;
+        .block;
+        .xo;
+        img{
+            width: 100%;
+            transition:all 0.3s ease;
+            &:hover{
+                transition:all 0.3s ease;
+                transform:scale(1.1);
+            }
+
+        }
+    }
+    .title{
+        a{
+            .block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            .f16;
+        }
+    }
+    .date-time{
+        color: #999;
+    }
+}
+.section.-getquote{
+    .head{
+        .title{
+            .f24;
+            .bold;
+            margin-bottom: 10px;
+        }
+        .desc{
+            .c(#888);
+        }    
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #eee;
+        .note{
+            .italic;
+            margin-top: 20px;
+
+        }
+    }
+    .box{
+        border:1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        .title{
+            padding:10px 20px;
+            background: #333;
+            .c(#fff);
+            margin-bottom: 20px;
+        }
+        &.-important{
+            .title{
+                background: @main;
+            }
+        }
+        .content{
+            padding:20px;
+        }
+        .text{
+            margin: 10px 0px;
+            font-weight: 600;
+        }
+
+    }
+    
+    .btn-submit{
+        .inline;
+        width: auto;
+        padding:15px 40px;
+    }
+}

@@ -1,0 +1,423 @@
+/*
+* @ Core CSS File
+* @ Author: Uoc Nguyen
+* @ Fontend Developer
+* @ Website: http://lamnham.com
+* @ Template: Iso Corporation Logistics
+*/
+/* Reset Css  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+a {
+  font-size: 13px;
+  color: #444;
+  font-weight: 300;
+}
+a:hover {
+  color: #d8271d;
+  text-decoration: none;
+}
+.red {
+  color: #d8271d;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  color: #444;
+  background: #f6f6f6;
+}
+.container {
+  max-width: 1200px;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: bold;
+}
+.tleft {
+  text-align: left;
+}
+.tright {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+.upper {
+  text-transform: uppercase;
+}
+.left,
+.ap-left {
+  float: left;
+}
+.right,
+.ap-right {
+  float: right;
+}
+.pointer {
+  cursor: pointer;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+.hidden {
+  display: none;
+}
+.xdot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.xo,
+.ap-xo {
+  overflow: hidden;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+.fullw {
+  width: 100%;
+}
+.fullh {
+  height: 100%;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.cell {
+  display: table-cell;
+}
+.table {
+  display: table;
+}
+.invisible,
+.ap-invisible {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.vtop {
+  vertical-align: top;
+}
+.vcenter {
+  vertical-align: middle;
+}
+.vbottom {
+  vertical-align: bottom;
+}
+.f9 {
+  font-size: 9px;
+}
+.f10 {
+  font-size: 10px;
+}
+.f11 {
+  font-size: 11px;
+}
+.f12 {
+  font-size: 12px;
+}
+.f13 {
+  font-size: 13px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f15 {
+  font-size: 15px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f17 {
+  font-size: 17px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f19 {
+  font-size: 19px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f21 {
+  font-size: 21px;
+}
+.f22 {
+  font-size: 22px;
+}
+.f23 {
+  font-size: 23px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f25 {
+  font-size: 25px;
+}
+.f26 {
+  font-size: 26px;
+}
+.f27 {
+  font-size: 27px;
+}
+.f28 {
+  font-size: 28px;
+}
+.f29 {
+  font-size: 29px;
+}
+.f30 {
+  font-size: 30px;
+}
+.f31 {
+  font-size: 31px;
+}
+.f32 {
+  font-size: 32px;
+}
+.thin {
+  font-weight: 300;
+}
+.thick {
+  font-weight: 500;
+}
+.canvas-invoice {
+  max-width: 991px;
+  margin: 0px auto;
+  border-top: 4px solid #d8271d;
+  padding: 40px 20px;
+  background: #fff;
+  line-height: 20px;
+  font-size: 14px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.canvas-invoice img {
+  max-width: 100%;
+}
+.canvas-invoice .head {
+  border-bottom: 1px dotted #d8271d;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.canvas-invoice .head .info {
+  color: #666;
+}
+.canvas-invoice .head .logo img {
+  max-height: 40px;
+}
+.canvas-invoice .head .company-name {
+  text-transform: uppercase;
+  color: #d8271d;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.canvas-invoice .body .name {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  color: #222;
+}
+.canvas-invoice .body .txt {
+  display: inline-block;
+  width: 120px;
+  color: #666;
+}
+.canvas-invoice .body .info {
+  margin-bottom: 10px;
+}
+.canvas-invoice .body .code {
+  color: #d8271d;
+  letter-spacing: 2px;
+}
+.canvas-invoice .body .midle {
+  margin-bottom: 30px;
+}
+.canvas-invoice .body .add {
+  font-weight: 500;
+  color: #222;
+}
+.canvas-invoice .body .barcode {
+  text-align: center;
+}
+.canvas-invoice .body .title {
+  color: #d8271d;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.canvas-invoice .body .info-order {
+  margin-top: 30px;
+}
+.canvas-invoice .body .info-order .txt {
+  display: block;
+  margin-bottom: 10px;
+}
+.canvas-invoice .body .info-order .add {
+  display: block;
+}
+.canvas-invoice .table-responsive {
+  margin-top: 40px;
+}
+.canvas-invoice .table-responsive thead th {
+  color: #d8271d;
+  background: #f9f9f9;
+  border-bottom: 0px;
+}
+.canvas-invoice .table-responsive .bold {
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .canvas-invoice .head .logo,
+  .canvas-invoice .head .address {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sender {
+    margin-bottom: 20px;
+  }
+}
+.check-status {
+  width: 35px;
+  position: relative;
+}
+.check-status .input {
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: 10;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+.check-status .check {
+  display: block;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  height: 18px;
+}
+.check-status .check:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.check-status .input:checked + .check {
+  background: #00bb28;
+  border: 1px solid #00b126;
+}
+.check-status .input:checked + .check:before {
+  left: auto;
+  right: 0px;
+  border: 1px solid #00b126;
+}

@@ -1,0 +1,350 @@
+/*
+* @ Core CSS File
+* @ Author: Uoc Nguyen
+* @ Fontend Developer
+*/
+
+
+/* Reset Css  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+    font-famheight: 30px;ily: inherit;
+    font-size: inherit;
+    // -webkit-font-smoothing: antialiased;
+    // -webkit-text-stroke: 0.0px;
+    // text-rendering: geometricPrecision;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    color: @text;
+}
+.container{
+    max-width: 1000px;
+}
+@import url(vars.less);
+@import url(config.less);
+@import url(header.less);
+
+.main-wrap{
+    display: table;
+}
+.sidebar{
+    width: 250px;
+    .cell;
+    .vtop;
+    padding:20px 0px;
+    padding-right: 40px;
+    .list{
+        .url{
+            .block;
+            margin-bottom: 15px;
+            padding-left: 12px;
+            .f14;
+            color: @text;
+            .relative;
+            &:before{
+                content:"";
+                .absolute;
+                top:0px;
+                left: 0px;
+                bottom: 0px;
+                height: 15px;
+                width: 2px;
+                margin:auto;
+                background: @borc;
+
+            }
+            &:hover{
+                color: @second;
+                
+                text-decoration: none;
+            }
+        }
+        .item{
+            &.active{
+                .url{
+                    .relative;
+                    color: @second;
+                    .bold;
+                    &:before{
+                        background: @second;
+                    }
+                }
+            }
+        }
+    }
+}
+.main-content{
+    .cell;
+    padding:20px 0px;
+    padding-left: 40px;
+    .relative;
+    &:before{
+        background-image: linear-gradient(to right, white, rgba(0, 0, 0, .05));
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        top: 0px;
+        width: 4px;
+    }
+
+    .head{
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid @borc;
+        .title{
+            .f32;
+            .bold;
+            margin-bottom: 10px;
+            line-height: 40px;
+        }
+    }
+}
+.article{
+    
+    div,p,h2,h3,h4,h5,li{
+        margin:12px 0px;
+        .f18;
+    }
+    li{
+        list-style:disc;
+        margin-left: 30px;
+    }
+}
+.article-related{
+    margin-top: 60px;
+    .title-related{
+        .bold;
+        .f18;
+        color: #1d2129;
+        border-bottom: 1px solid @borc;
+        padding-bottom: 10px;
+
+    }
+    .list{
+        .item{
+            margin:12px 0px;
+            .url{
+                color: @second;
+                .f18;
+            }
+        }
+    }
+}
+.footer{
+    padding: 40px 0px;
+    border-top: 1px solid @borc;
+    color: #90949c;
+    background: #f6f7f9;
+    .f14;
+    p{
+        margin-bottom: 10px;
+    }
+    .link{
+        .block;
+        color: #90949c;
+        .f14;
+        margin-bottom: 10px;
+        &:hover{
+            .underline;
+        }
+
+    }
+}
+.nav-toggle{
+    .hidden;
+}
+.common-overlay{
+    .fixed;
+    .full;
+    top: 0px;
+    left: 0px;
+    .rgba(#000,0.1);
+    z-index: 99;
+    .hidden;
+    &.show{
+        .block;
+
+    }
+
+}
+.box-register{
+    max-width: 600px;
+    margin:40px auto;
+    padding: 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+    .title{
+        .f24;
+        .bold;
+        margin-bottom: 10px;
+    }
+    .desc{
+        color: #90949c;
+        margin-bottom: 20px;
+        .f16;
+        border-bottom: 1px solid @borc;
+        padding-bottom: 10px;
+    }
+    .form-group{
+        margin-bottom: 25px;
+    }
+    .label{
+        font-size: 14px;
+        .block;
+        color: @text;
+        .tleft;
+        padding:0px;
+        margin-bottom: 7px;
+    }
+    .form-control{
+        border:1px solid #c5c5c5;
+        height: 40px;
+        .corner(3px);
+        box-shadow: none;
+        &:focus{
+            border-color: @success;
+        }
+    }
+    textarea.form-control{
+        min-height: 100px;
+        resize: vertical; 
+
+    }
+    .form-group.-actions{
+        .tright;
+        .btn-submit{
+            background: @success;
+            color: #fff;
+            .corner(3px);
+            padding:10px 40px;
+            border:none;
+            .bold;
+            .f16;
+            &:hover{
+                background: darken(@success, 10%);
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .header{
+        padding:10px 0px;
+    }
+    .nav-toggle{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        .absolute;
+        .block;
+        top: 15px;
+        right: 15px;
+        .rgba(#000,0.1);
+        color: #fff;
+        .f16;
+        .center;
+        .pointer;
+        &:hover{
+            .rgba(#000,0.2);
+        }
+    }
+    .sidebar,.main-content{
+        .block;
+        padding: 30px 0px;
+        border: none;
+        &:before{
+            .hidden;
+        }
+    }
+    .sidebar{
+        .fixed;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        background: #fff;
+        width: 220px;
+        z-index: 100;
+        left: -100%;
+        box-shadow:2px 0px 5px rgba(0, 0, 0, 0.1);
+        .transition(0.3s);
+        visibility: hidden;
+        .opacity(0);
+        &.show{
+            left: 0px;
+            .transition(0.3s);
+            visibility: visible;
+            .opacity(1);
+        }
+    }
+
+}

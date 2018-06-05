@@ -1,0 +1,77 @@
+.contact-us{
+    .bg-image{
+        img{
+            max-width: 100%;
+        }
+    }
+    .title-main{
+        margin-bottom: 10px;
+    }
+    .list-cta{
+        .btn{
+            width: 160px;
+            padding:10px 20px;
+            .center;
+            margin-right: 10px;
+            .upper;
+
+            &.-chat{
+                background: @main;
+                color:#fff;
+                border:2px solid @main;
+                &:hover{
+                    background: darken(@main, 90%);
+                    border:2px solid darken(@main, 90%);
+                }
+            }
+            &.-quotes{
+                border:2px solid @main;
+                color: @main;
+                &:hover{
+                    background: @main;
+                    color:#fff;
+                }
+            }
+        }
+    }
+    .box-form{
+        padding:20px;
+        border:2px solid @borc;
+        background: #fff;
+        .title{
+            .upper;
+            .c(@main);
+            margin-bottom: 30px;
+            .bold;
+            .f16;
+        }
+        .label{
+            color: #9a9a9a;
+            .f13;
+            .tleft;
+            .normal;
+            padding:0px;
+            .hidden;
+            margin-bottom: 10px;
+        }
+        .form-control{
+            border:1px solid #eee;
+            border-radius: 0px;
+            box-shadow: none;
+            height: auto;
+            padding:10px;
+            &:focus{
+                border:1px solid @success;
+            }
+        }
+        .btn-submit{
+            padding:10px 30px;
+            background: @main;
+            .upper;
+            .c(#fff);
+            &:hover{
+                background: darken(@main, 6%)
+            }
+        }
+    }
+}
